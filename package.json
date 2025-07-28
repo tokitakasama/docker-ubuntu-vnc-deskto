@@ -1,0 +1,21 @@
+{
+  "name": "web-scraper-playwright",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js", // アプリケーション起動コマンド
+
+    // ★ ここから追加・変更 ★
+    "postinstall": "npx playwright install chromium --with-deps" // Playwrightのブラウザをインストール
+    // ★ ここまで追加・変更 ★
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.19.2",
+    "playwright": "^1.45.0"
+  }
+}
